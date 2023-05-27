@@ -7,7 +7,6 @@ const home = async (req,res) => {
     } catch (err) {
         res.status(500).send({ error: err.message });
       }
-    
 };
 
 const Add = (req, res) => {
@@ -23,8 +22,19 @@ const Create = async (req, res) => {
       }
 };
 
+const not = async (req, res) => {
+    try {
+        const NewsList = await News.find();
+        res.render('New.ejs', {NewsList});
+    } catch (err) {
+        res.status(500).send({ error: err.message });
+    }
+}
+
 module.exports = {
     home,
     Create,
-    Add
+    Add,
+    not
+
 };
