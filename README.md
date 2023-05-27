@@ -1,2 +1,3 @@
-# site-de-noticias-node
- um site de noticias feito com node js e com banco de dados mongoDb
+# site-de-noticias
+Site de noticias feito com node js, ejs, express tendo o  banco de dados mongoDB
+(obs: o site ainda não está completo)

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>site de notícias</h1>
+        <a href="/Add">Adicionar noticia</a>
+    </header>
+
+    <main>
+        <% if(News = '') { %>
+            <div class="notNews">
+                <h1>
+                    nenhuma notícia cadastrada ainda: <br> cadastre uma <a href="/Add">agora</a>
+                </h1>
+            </div>        
+        <% } %>
+    </main>
+
+</body>
+</html>
