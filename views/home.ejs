@@ -13,13 +13,11 @@
     </header>
 
     <main>
-        <% if(News = '') { %>
-            <div class="notNews">
-                <h1>
-                    nenhuma notícia cadastrada ainda: <br> cadastre uma <a href="/Add">agora</a>
-                </h1>
-            </div>        
-        <% } %>
+        <% NewsList.forEach((news)=>{ %>
+            <div>
+                <h1><%= news.title %></h1>
+            </div>
+        <% }) %>
     </main>
 
 </body>

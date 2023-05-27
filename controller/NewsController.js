@@ -1,7 +1,13 @@
 const News = require('../model/News');
 
-const home = (req,res) => {
-    res.render('home');
+const home = async (req,res) => {
+    try {
+        const NewsList = await News.find();
+        res.render('home', {NewsList});
+    } catch (err) {
+        res.status(500).send({ error: err.message });
+      }
+    
 };
 
 const Add = (req, res) => {
