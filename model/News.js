@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+
 const NewsSchema = new mongoose.Schema({
     title: {
         type: String,
@@ -14,12 +15,6 @@ const NewsSchema = new mongoose.Schema({
         type: String,
         require: true
     },
-
-    date: {
-        type: Date,
-        require: true
-    },
 });
-
 
 module.exports = mongoose.model('News', NewsSchema);
