@@ -2,6 +2,7 @@ const News = require('../model/News');
 
 const home = async (req,res) => {
     try {
+        // const NewsId = await News.findOne({_id: req.params.id});
         const NewsList = await News.find();
         res.render('home', {NewsList});
     } catch (err) {
@@ -24,8 +25,8 @@ const Create = async (req, res) => {
 
 const not = async (req, res) => {
     try {
-        const NewsList = await News.find();
-        res.render('New.ejs', {NewsList});
+        const not = await News.findOne({_id: req.params.id});
+        res.render('New', {not});
     } catch (err) {
         res.status(500).send({ error: err.message });
     }
