@@ -20,7 +20,7 @@
                 <h1 class="title"><%= news.title %></h1>
                 <img src="<%= news.img %>" alt="imagem referente a noticia">
                 <h1><a href="/not/<%= news._id %>">Click aqui e Saiba mais</a></h1>
-                <h1><a href="/delete/<%= news._id%>">Deletar</a></h1>
+                <h1><a href="/delete/<%= news._id%>" class="delete">Deletar</a></h1>
             </div>
         <% }) %>
     </main>

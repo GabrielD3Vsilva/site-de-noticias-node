@@ -54,8 +54,8 @@ main {
 .card {
     display: flex;
     width: 400px;
-    border: 1px solid red;
-    height: 500px;
+    border: 5px solid red;
+    height: 600px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -79,6 +79,7 @@ main {
     background-color: rgb(107, 2, 2);
     transition: .2s all ease;
     padding: 7px;
+    border: 2px solid black;
 }
 
 .card a:hover {
@@ -96,4 +97,56 @@ footer {
     font-size: 1.2rem;
     background-color: red;
     text-align: center;
+    margin-top: 70vh;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+section form{
+    font-size: 2rem;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+section form input {
+    height: 30px;
+}
+
+.submit {
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    background-color: rgb(107, 2, 2);
+    transition: .2s all ease;
+    padding: 7px;
+    margin-top: 2rem;
+    height: 40px;
+}
+
+.submit:hover {
+    background-color: red;
+}
+
+.delete {
+    margin-top: 4rem;
+}
+
+.if {
+    font-size: 3rem;
+}
+
+aside {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3rem;
+    width: 1000px;
+    flex-direction: column; */
 }
