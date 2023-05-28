@@ -32,10 +32,22 @@ const not = async (req, res) => {
     }
 }
 
+const Delete = async (req, res) => {
+    try { 
+        const NewsList = await News.find();
+        const Delete = await News.deleteOne({_id: req.params.id});
+        res.render('home', {Delete, NewsList});
+
+    } catch (err) {
+        res.status(500).send({error: err.message});
+    }
+}
+
 module.exports = {
     home,
     Create,
     Add,
-    not
+    not,
+    Delete
 
 };
