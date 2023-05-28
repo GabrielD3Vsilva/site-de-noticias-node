@@ -7,18 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Cadastro de músicas</h1>
-    <form action="/Create" method="post">
-        <label for="title">titulo da notícia: </label>
-        <input type="text" name="title" id="title">
+    <h1>Cadastro de notícias</h1>
+    <section>
+        <form action="/Create" method="post">
+            <label for="title">titulo da notícia: </label>
+            <input type="text" name="title" id="title">
+            <label for="img">link da imagem</label>
+            <input type="text" name="img" id="img">
+            <label for="text">Texto descritivo da notícia</label>
+            <input type="text" name="text" id="text">
+            <input type="submit" value="Adicionar notícia">
+        </form>
+    </section>
 
-        <label for="img">link da imagem</label>
-        <input type="text" name="img" id="img">
-
-        <label for="text">Texto descritivo da notícia</label>
-        <input type="text" name="text" id="text">
-
-        <input type="submit" value="Adicionar notícia">
-    </form>
+    <footer>site desenvolvido para fins educacionais</footer>
 </body>
 </html>

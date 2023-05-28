@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 100%;
+    width: 1600px;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    color: #001E1F;
+    font-size: 3rem;
+}
+
+header a {
+    text-decoration: none;
+    
+}
