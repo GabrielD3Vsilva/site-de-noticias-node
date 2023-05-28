@@ -9,8 +9,6 @@
 </head>
 <body>
     <header>
-        <h1><%= not.title %></h1>
-
         <nav>
             <ul>
                 <li><a href="/">Voltar a página anterior</a></li>
@@ -18,11 +16,14 @@
         </nav>
     </header>
 
-    <aside>
-        <p><%= not.text %></p>
-        <img src="<%= not.img %>" alt="imagem referente a noticia">
-    </aside>
+    <main>
+        <aside>
+            <h1 class="new"><%= not.title %></h1>
+            <p><%= not.text %></p>
+            <img src="<%= not.img %>" alt="imagem referente a noticia">
+        </aside>
+    </main>
 
-    <footer>site desenvolvido para fins educacionais</footer>
+    <!-- <footer>site desenvolvido para fins educacionais</footer> -->
 </body>
 </html>

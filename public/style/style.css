@@ -13,6 +13,7 @@ body {
 }
 
 header {
+    margin-top: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -141,12 +142,17 @@ section form input {
     font-size: 3rem;
 }
 
-aside {
-    /* display: flex;
-    align-items: center;
+main {
+    display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+aside {
+    width: 400px;
+}
+
+.new {
     text-align: center;
-    font-size: 1.3rem;
-    width: 1000px;
-    flex-direction: column; */
+    font-size: 3rem;
 }
