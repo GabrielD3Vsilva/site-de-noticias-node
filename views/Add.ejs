@@ -10,12 +10,12 @@
     <h1>Cadastro de notícias</h1>
     <section>
         <form action="/Create" method="post">
-            <label for="title">titulo da notícia: </label>
-            <input type="text" name="title" id="title">
+            <label for="title">titulo da Postagem: </label>
+            <input type="text" name="title" id="title" required placeholder="obrigatório">
             <label for="img">link da imagem</label>
-            <input type="text" name="img" id="img">
-            <label for="text">Texto descritivo da notícia</label>
-            <input type="text" name="text" id="text">
+            <input type="text" name="img" id="img" placeholder="opcional">
+            <label for="text">Texto descritivo da Postagem</label>
+            <input type="text" name="text" id="text" placeholder="obrigatório">
             <input type="submit" value="Adicionar notícia">
         </form>
     </section>
