@@ -26,5 +26,65 @@ header h1 {
 
 header a {
     text-decoration: none;
-    
+    color: white;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    background-color: rgb(107, 2, 2);
+    transition: .2s all ease;
+    padding: 7px;
+}
+
+header a:hover {
+    background-color: red;
+    transform: translateY(-4px);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 5rem;
+    width: 1000px;
+}
+
+
+.card {
+    display: flex;
+    width: 400px;
+    border: 1px solid red;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 20px;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.card a {
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    background-color: rgb(107, 2, 2);
+    transition: .2s all ease;
+    padding: 7px;
+}
+
+.card a:hover {
+    background-color: red;
+}
+
+.title {
+    margin-bottom: 50px;
+    font-size: 3rem;
+    color: brown;
 }

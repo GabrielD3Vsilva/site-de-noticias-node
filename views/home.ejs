@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,8 +16,8 @@
 
     <main>
         <% NewsList.forEach((news)=>{ %>
-            <div class="new card">
-                <h1><%= news.title %></h1>
+            <div class="card">
+                <h1 class="title"><%= news.title %></h1>
                 <img src="<%= news.img %>" alt="imagem referente a noticia">
                 <h1><a href="/not/<%= news._id %>">Click aqui e Saiba mais</a></h1>
             </div>
